@@ -29,16 +29,17 @@ public class Punto {
 	}
 	
 	public boolean equals(Punto p){
-		return ((x==p.getX())&&(y==p.getY()));
+		return x==p.getX()&&y==p.getY();
 		}
 
 	
 	@Override
 	public String toString(){
-	return "("+x+","+y+")";
+		return "("+x+","+y+")";
 	}
+
 	public double calcularDistancia(){
-		return (x-(y+y));
+		return x-(y+y);
 	}
 	
 	
