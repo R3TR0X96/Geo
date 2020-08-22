@@ -1,8 +1,8 @@
 package Test;
 
-import Numero.Punto;
+import Modelo.Punto;
 
-import Numero.Circulo;
+import Modelo.Circulo;
 
 public class TestGeometrico {
  
@@ -24,7 +24,7 @@ public class TestGeometrico {
 	
 		System.out.println(circulo1.calcularArea() + " " + circulo1.calcularPerimetro());
 		
-		System.out.println(circulo1.);
+		System.out.println(circulo1.calcularDistancia(circulo2));
 		
 		System.out.println(circulo1.equals(circulo2));
 		

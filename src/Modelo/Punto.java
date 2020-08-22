@@ -1,4 +1,4 @@
-package Numero;
+package Modelo;
 
 public class Punto {
 	
@@ -38,8 +38,9 @@ public class Punto {
 		return "("+x+","+y+")";
 	}
 
-	public double calcularDistancia(){
-		return x-(y+y);
+	public double calcularDistancia(Punto p){
+		//d = raiz cuadrada de x - x al cuadrado + y - y al cuadrado
+		return Math.sqrt(Math.pow(x - p.getX() , 2) + Math.pow(y - p.getY(), 2));
 	}
 	
 	

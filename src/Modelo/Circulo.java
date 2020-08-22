@@ -1,4 +1,4 @@
-package Numero;
+package Modelo;
 
 public class Circulo {
 	private Punto origen;
@@ -35,7 +35,8 @@ public class Circulo {
 	 }
 	 
 	 public double calcularDistancia(Circulo c) {
-		 return 
+		 //return Math.sqrt(Math.pow(origen.getX() - c.getOrigen().getX(), 2) + Math.pow(origen.getY() - c.getOrigen().getY(), 2));
+		 return origen.calcularDistancia(c.getOrigen());
 	 }
 	 
 	public boolean equals(Circulo c) {
